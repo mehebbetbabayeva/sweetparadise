@@ -1,0 +1,76 @@
+.header{
+    position: sticky;
+    z-index: 100;
+    
+    top: 0;
+}
+.logo{
+    color: #9C0746;
+    font-family: Sail;
+    font-size: 26px;
+
+    font-weight: 400;
+  
+}
+.header_container{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.active{
+    background-color: #9C0746;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: white;
+    font-family: Montserrat;
+font-size: 14px;
+font-family: Montserrat;
+font-weight: 400;
+}
+.navli{
+    color: #444251;
+font-family: Montserrat;
+font-size: 14px;
+
+font-weight: 400;
+
+}
+.icon_group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+ 
+}
+.basket_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9C0746;
+    font-size: 27px;
+    position: relative;
+}
+.basket_count{
+position: absolute;
+top: -10px;
+right: -10px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 15px;
+height: 15px;
+color: white;
+border-radius: 50%;
+background-color: #9C0746;
+font-size: 14px;
+}
+
