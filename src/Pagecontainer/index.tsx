@@ -1,14 +1,18 @@
 import { ReactNode } from "react"
+import Header from "../components/Header"
 
 interface IchildrenProps {
     children: ReactNode
 }
 
 const PageContainer = ({ children }: IchildrenProps) => {
-    return (
+    return (<>
+<Header/>
         <main>
             {children}
         </main>
+        
+    </>
     )
 }
 
