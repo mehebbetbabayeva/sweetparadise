@@ -11,7 +11,9 @@ const PageContainer = ({ children }: IchildrenProps) => {
 <Header/>
         <main>
             {children}
+            
         </main>
+    
         <Footer/>
     </>
     )

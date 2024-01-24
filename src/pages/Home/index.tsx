@@ -1,10 +1,11 @@
 import PageContainer from "../../Pagecontainer"
+import Services from "../../components/Services"
 
 
 const Home = () => {
     return (
         <PageContainer>
-            home page
+            <Services/>
         </PageContainer>
     )
 }
