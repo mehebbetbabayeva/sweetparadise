@@ -57,7 +57,7 @@ const Header = () => {
                             <span className={styles.basket_count}>0</span>
                         </div>
 
-                        <PurpleButton title="Giriş" />
+
 
                         <div className={styles.menu_icon} onClick={openMenu}><FaBars /></div>
 
