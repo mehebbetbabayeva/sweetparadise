@@ -35,15 +35,15 @@ const Header = () => {
                     <ul className={styles.nav}>
                         {
                             navData.map(({ to, title }) => {
-                                return <li  key={title}><NavLink to={to} className={({isActive})=>{return isActive ? styles.active : styles.navli}} >{title}</NavLink></li>
+                                return <li key={title}><NavLink to={to} className={({ isActive }) => { return isActive ? styles.active : styles.navli }} >{title}</NavLink></li>
                             })
                         }
                     </ul>
                     <div className={styles.icon_group}>
                         <div className={styles.basket_icon}><FaShoppingBasket />
-                        <span className={styles.basket_count}>0</span>
+                            <span className={styles.basket_count}>0</span>
                         </div>
-                        <PurpleButton title="Giriş"/>
+                        <PurpleButton title="Giriş" />
                     </div>
                 </div>
 
