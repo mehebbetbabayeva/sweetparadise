@@ -25,9 +25,17 @@
 
 
 
-@media screen and (min-width: 320px) and (max-width:480px) {
+@media screen and (min-width: 320px) and (max-width:553px) {
     .container{
-        max-width: 100%;
+        max-width: 90%;
+        
+    }
+}
+
+
+@media screen and (min-width: 553px) and (max-width:768px) {
+    .container{
+        max-width: 90%;
         
     }
 }
