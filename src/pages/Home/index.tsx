@@ -4,6 +4,8 @@ import Services from "../../components/Services"
 
 import ServicesSteps from "../../components/ServicesSteps"
 
+import SocialMedia from "../../components/SocialMedia"
+
 
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
 
         
             <ServicesSteps />
+
+            <SocialMedia></SocialMedia>
 
         </PageContainer>
     )
