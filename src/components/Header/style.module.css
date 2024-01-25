@@ -73,7 +73,7 @@ font-size: 14px;
 
 
    /* Responsivlik */
-@media screen and (min-width:320px) and (max-width:553px){
+@media screen and (min-width:320px) and (max-width:768px){
     .header{
         position: relative;
     }
@@ -130,19 +130,3 @@ font-size: 14px;
  }
 }
 
-@media screen and (min-width:553px) and (max-width:768px){
-.logo{
-    font-size: 20px;
-}
-.navli{
-    font-size: 10px;
-}
-.active{
-    padding: 4px 9px;
-    font-size: 10px;
-}
-.basket_icon,.menu_icon{
-    font-size: 20px;
-}
-
-}
