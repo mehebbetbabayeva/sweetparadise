@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,35 +7,35 @@
 
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 }
 
-@font-face{
+@font-face {
     font-family: "Sail";
-    src:  url("./fonts/Sail/Sail-Regular.ttf")
+    src: url("./fonts/Sail/Sail-Regular.ttf")
 }
 
-@font-face{
+@font-face {
     font-family: "Montserrat";
-    src:  url("./fonts/Mont/Montserrat-Regular.ttf")
+    src: url("./fonts/Mont/Montserrat-Regular.ttf")
 }
 
 
 
 @media screen and (min-width: 320px) and (max-width:553px) {
-    .container{
+    .container {
         max-width: 90%;
-        
+
     }
 }
 
 
 @media screen and (min-width: 553px) and (max-width:768px) {
-    .container{
+    .container {
         max-width: 90%;
-        
+
     }
 }
