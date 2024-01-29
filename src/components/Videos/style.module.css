@@ -1,0 +1,45 @@
+.allVideos_Container{
+    display: grid;
+    padding: 100px 0;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap: 20px;   
+ 
+}
+
+.allVideos_Container div {
+    position: relative;
+}
+
+.allVideos_Container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+
+.fourthVideo {
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+.fifthVideo {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+.seventhVideo {
+    grid-area: 2 / 3 / span 2 / span 1;
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:553px){
+    .allVideos_Container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}
+
