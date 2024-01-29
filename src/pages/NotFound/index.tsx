@@ -1,4 +1,4 @@
-import styles from "../404NotFound/style.module.css"
+import styles from "../NotFound/style.module.css"
 import imagNotfound from "../../assets/images/photo_5309843003071913746_y.jpg"
 import PurpleButton from "../../components/PurpleButton"
 import { Link } from "react-router-dom";
