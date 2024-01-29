@@ -4,7 +4,7 @@ import Services from "../../components/Services"
 
 import ServicesSteps from "../../components/ServicesSteps"
 import WelcomeBanner from "../../components/WelcomeBanner"
-
+import Videos from "../../components/Videos"
 import SocialMedia from "../../components/SocialMedia"
 
 
@@ -15,7 +15,7 @@ const Home = () => {
             <WelcomeBanner />
             <Services />
             <ServicesSteps />
-
+             <Videos></Videos>
             <SocialMedia></SocialMedia>
 
         </PageContainer>
