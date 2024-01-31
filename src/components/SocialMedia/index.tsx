@@ -1,14 +1,14 @@
 import styles from "./style.module.css";
-import Ekler from "../../assets/images/yeklery-3 1.png";
-import Sufle from "../../assets/images/sufle.png";
-import Donats from "../../assets/images/donats.png";
-import Donats2 from "../../assets/images/donuts-colorfull.png";
-import Makaron from "../../assets/images/makaron.png";
-import LastCookie from "../../assets/images/lastcookie.png";
+import Eklerr from "../../assets/images/Ekler.jpeg";
+import Sufle from "../../assets/images/poncik1.jpeg";
+import Donats from "../../assets/images/suflee.jpeg";
+import Donats2 from "../../assets/images/Donatsss.jpeg";
+import Makaron from "../../assets/images/Makaronnn.png";
+import LastCookie from "../../assets/images/cherry.jpeg";
 import PurpleButton from "../PurpleButton";
 import { Link } from "react-router-dom";
 
-const Allcookies = [Ekler, Donats, Sufle, Donats2, Makaron, LastCookie];
+const Allcookies = [Eklerr, Sufle, Donats, Donats2, Makaron, LastCookie];
 
 const index = () => {
   return (
@@ -26,7 +26,6 @@ const index = () => {
             );
           })}
         </div>
-
         <div className={styles.boxPurpleButton}>
           <div className={styles.purplebtn}>
             <Link to="https://www.instagram.com/swee_tparadise?igsh=cGo2eWdzemVvcnhu"><PurpleButton title="Abunə ol" /></Link>
