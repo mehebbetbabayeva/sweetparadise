@@ -1,51 +1,60 @@
-.header{
+.header {
     position: sticky;
     z-index: 100;
     top: 0;
+    background-color: white;
 }
-.logo{
+
+.logo {
     color: #9C0746;
     font-family: Sail;
     font-size: 26px;
     font-weight: 400;
 }
-.header_container{
+
+.header_container {
     padding: 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav{
+
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
 }
-.active{
+
+.active {
     background-color: #9C0746;
     border-radius: 10px;
     padding: 8px 15px;
     color: white;
     font-family: Montserrat;
-font-size: 14px;
-font-family: Montserrat;
-font-weight: 400;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
 }
-.navli{
+
+.navli {
     color: #444251;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 400;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
 
 }
-.icon_group{
+
+.icon_group {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
- 
+
 }
-.basket_icon,.menu_icon{
+
+.basket_icon,
+.menu_icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,96 +62,112 @@ font-weight: 400;
     font-size: 27px;
     position: relative;
 }
-.menu_icon{
+
+.menu_icon {
     display: none;
 }
-.basket_count{
-position: absolute;
-top: -10px;
-right: -10px;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 15px;
-height: 15px;
-color: white;
-border-radius: 50%;
-background-color: #9C0746;
-font-size: 14px;
+
+.basket_count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 50%;
+    background-color: #9C0746;
+    font-size: 14px;
 }
 
 
-   /* Responsivlik */
-@media screen and (min-width:320px) and (max-width:553px){
-    .header{
+
+/* Responsivlik */
+@media screen and (min-width:320px) and (max-width:553px) {
+    .header {
+
         position: relative;
     }
- 
- .navli{
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
- }
+
+    .navli {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
 
 
- .nav{
-    display: none;
-  }
-   .menu_icon{
-    display: block;
-   }
-   .cancel_icon{
-    position: absolute;
-    right: 10px;
-    top: 29px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-   }
-   .mobilenav{
-    height: 100vh;
-    background-color: rgb(156, 7, 70);
-    width: 100%;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    align-items: start;
-    gap: 20px;
-    padding: 40px 30px;
-    
- }
- .headerli:hover{
-   background-color: white;
-   border-radius: 10px;
-   font-weight: 700;
-   
- }
- .headerli{
-    padding: 5px;
- }
- .headerli:hover .navli{
-    color: #9C0746;
-   
+    .nav {
+        display: none;
+    }
 
- }
-}
 
-@media screen and (min-width:553px) and (max-width:768px){
-.logo{
-    font-size: 20px;
-}
-.navli{
-    font-size: 10px;
-}
-.active{
-    padding: 4px 9px;
-    font-size: 10px;
-}
-.basket_icon,.menu_icon{
-    font-size: 20px;
+    .menu_icon {
+        display: block;
+    }
+
+    .cancel_icon {
+        position: absolute;
+        right: 10px;
+        top: 29px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .mobilenav {
+        height: 100vh;
+        background-color: rgb(156, 7, 70);
+        width: 100%;
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        align-items: start;
+        gap: 20px;
+        padding: 40px 30px;
+
+    }
+
+    .headerli:hover {
+        background-color: white;
+        border-radius: 10px;
+        font-weight: 700;
+
+    }
+
+    .headerli {
+        padding: 5px;
+    }
+
+    .headerli:hover .navli {
+        color: #9C0746;
+
+
+    }
 }
 
+@media screen and (min-width:553px) and (max-width:768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .navli {
+        font-size: 10px;
+    }
+
+    .active {
+        padding: 4px 9px;
+        font-size: 10px;
+    }
+
+    .basket_icon,
+    .menu_icon {
+        font-size: 20px;
+    }
+
 }
+
