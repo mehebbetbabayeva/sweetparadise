@@ -52,7 +52,7 @@ const Header = () => {
                         }
                     </ul>
                     <div className={styles.icon_group}>
-                        <PurpleButton title="Qeydiyyat" />
+                        <Link to={"/qeydiyyat"}><PurpleButton title="Qeydiyyat" /></Link>
                         <div className={styles.basket_icon}><FaShoppingBasket />
                             <span className={styles.basket_count}>0</span>
                         </div>
