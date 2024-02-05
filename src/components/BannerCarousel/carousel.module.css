@@ -1,17 +1,14 @@
 .fancy_carousel_wrapper_element {
     background-color: transparent;
-
 }
 
 
 
 .fancy_carousel {
     position: relative;
-
     transition: 0.5s;
     transform-origin: center center;
     background-color: transparent;
-    ;
 
 }
 

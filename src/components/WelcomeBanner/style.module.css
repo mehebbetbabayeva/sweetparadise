@@ -21,13 +21,16 @@
 
 }
 
-.banner_page {
+.banner_container {
     overflow: hidden;
     padding: 150px 0 300px 0;
     background-color: white;
     position: relative;
 
 }
+
+
+
 
 .banner_img {
     position: absolute;
