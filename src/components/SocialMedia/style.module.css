@@ -50,15 +50,15 @@
 
 }
 
-.purplebtn {
-  width: 260px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.purplebtn{
+    width: 260px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  }
 
 
-}
 
 @media screen and (min-width:320px) and (max-width:553px) {
   .insta {
