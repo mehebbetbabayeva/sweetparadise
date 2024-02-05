@@ -1,0 +1,70 @@
+.kataloq_title {
+    color: #444251;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.kataloq_container {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+
+.kataloq_carousel_item_img {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.kataloq_carousel_item h3 {
+    color: #B44E79;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+
+.kataloq_products_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.kataloq_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:320px) and (max-width:553px) {
+    .kataloq_title {
+        font-size: 30px;
+
+    }
+
+    .kataloq_container {
+
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width:554px) and (max-width:768px) {
+
+
+    .kataloq_products_container {
+        gap: 15px;
+    }
+}

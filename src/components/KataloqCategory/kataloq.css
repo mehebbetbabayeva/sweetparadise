@@ -1,0 +1,43 @@
+.mySwiper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.mySwiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.mySwiper .swiper-slide h3 {
+    color: #B44E79;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mySwiper .selected {
+    transform: scale(1.7);
+    gap: 10px;
+}
+
+@media screen and (max-width:553px) {
+    .mySwiper .selected {
+        transform: scale(1.2);
+        gap: 5px;
+    }
+}

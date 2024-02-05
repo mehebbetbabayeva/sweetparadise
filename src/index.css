@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-outline: none;
+    outline: none;
 }
 
 .container {
@@ -16,12 +16,12 @@ outline: none;
 
 
 
-input::-webkit-outer-spin-button, 
-      input::-webkit-inner-spin-button { 
-         -webkit-appearance: none; 
-      }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
-@font-face{
+@font-face {
 
     font-family: "Sail";
     src: url("./fonts/Sail/Sail-Regular.ttf")
@@ -48,4 +48,3 @@ input::-webkit-outer-spin-button,
 
     }
 }
-
