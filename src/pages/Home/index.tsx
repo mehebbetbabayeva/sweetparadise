@@ -9,6 +9,8 @@ import SocialMedia from "../../components/SocialMedia"
 
 
 
+
+
 const Home = () => {
     return (
         <PageContainer>
@@ -16,7 +18,8 @@ const Home = () => {
             <Services />
             <ServicesSteps />
              <Videos></Videos>
-            <SocialMedia></SocialMedia>
+            <SocialMedia/>
+      
 
         </PageContainer>
     )
