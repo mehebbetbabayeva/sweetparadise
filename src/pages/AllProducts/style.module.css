@@ -1,0 +1,50 @@
+.icon_input input {
+    border: none;
+    color: #9C0746;
+    width: 100%;
+}
+
+.icon_input span {
+    color: #9C0746;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.form_register .icon_input {
+    border-radius: 30px;
+    border: 1px solid #9C0746;
+    padding: 15px;
+    width: 320px;
+    background: #FFF;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 70px 0;
+
+}
+
+@media screen and (min-width:554px) and (max-width:768px) {
+
+
+    .productContainer {
+        gap: 15px;
+    }
+}
