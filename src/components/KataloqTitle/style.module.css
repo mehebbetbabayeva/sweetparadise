@@ -1,0 +1,14 @@
+.kataloq_title {
+    color: #444251;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+@media screen and (min-width:320px) and (max-width:553px) {
+    .kataloq_title {
+        font-size: 30px;
+
+    }
+}

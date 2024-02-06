@@ -7,7 +7,7 @@ import maffin from "../../assets/images/muffin1.jpg";
 import donut from "../../assets/images/donut1.jpg";
 import { productData } from "../../data";
 import CardItem from "../CardItem";
-import PurpleButton from "../PurpleButton";
+
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -62,7 +62,7 @@ const KataloqCategory = () => {
     return (
         <div className="container">
             <div className={styles.kataloq_container}>
-                <h2 className={styles.kataloq_title}>Dadlı kataloq</h2>
+              
                 <Swiper
                     watchSlidesProgress={true}
                     className="mySwiper"
@@ -95,7 +95,7 @@ const KataloqCategory = () => {
                     }
                 </div>
 
-                <div className={styles.kataloq_btn}><Link to={"/kataloq"}><PurpleButton title="Daha çox şirniyyat" /></Link></div>
+                
             </div>
         </div >
     );
