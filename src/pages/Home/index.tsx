@@ -9,6 +9,8 @@ import Kataloq from "../../components/Kataloq"
 
 
 
+
+
 const Home = () => {
     return (
         <PageContainer>
@@ -18,7 +20,6 @@ const Home = () => {
             <Kataloq/>
             <Videos />
             <SocialMedia />
-
         </PageContainer>
     )
 }
