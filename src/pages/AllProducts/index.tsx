@@ -4,14 +4,14 @@ import styles from "./style.module.css"
 import { useState } from "react"
 import { productData } from "../../data";
 import CardItem from "../../components/CardItem";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 const Products = () => {
     const [search, setsearch] = useState("")
     const filteredProducts = productData.filter((card) =>
-    
-    card.title.toLowerCase().includes(search.toLowerCase())
-  );
-    
+
+        card.title.toLowerCase().includes(search.toLowerCase())
+    );
+
 
 
     return (
@@ -29,16 +29,16 @@ const Products = () => {
                 </div>
             </div>
             <div className={styles.productContainer}>
-            {filteredProducts.map((product) => (
-          <Link to={"/"} key={product.id}>
-            <CardItem
-              image={product.image}
-              title={product.title}
-              description={product.description}
-              price={product.price}
-            />
-          </Link>
-        ))}
+                {filteredProducts.map((product) => (
+                    <Link to={`/kataloq/${product.title}`} key={product.id}>
+                        <CardItem
+                            image={product.image}
+                            title={product.title}
+                            description={product.description}
+                            price={product.price}
+                        />
+                    </Link>
+                ))}
             </div>
         </PageContainer>
 
