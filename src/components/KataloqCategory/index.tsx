@@ -62,7 +62,7 @@ const KataloqCategory = () => {
     return (
         <div className="container">
             <div className={styles.kataloq_container}>
-              
+
                 <Swiper
                     watchSlidesProgress={true}
                     className="mySwiper"
@@ -84,7 +84,7 @@ const KataloqCategory = () => {
                 <div className={styles.kataloq_products_container}>
                     {
                         filteredProducts.map((product) => {
-                            return <Link to={"/"}><CardItem
+                            return <Link to={`/kataloq/${product.title}`}><CardItem
                                 key={product.id}
                                 image={product.image}
                                 title={product.title}
@@ -95,7 +95,7 @@ const KataloqCategory = () => {
                     }
                 </div>
 
-                
+
             </div>
         </div >
     );
