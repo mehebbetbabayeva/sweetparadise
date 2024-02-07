@@ -5,6 +5,8 @@ import PurpleButton from "../PurpleButton";
 import { FaBars } from "react-icons/fa";
 import { ImCancelCircle } from "react-icons/im";
 import { useState } from "react";
+
+
 const navData = [
     {
         to: "/",
@@ -29,6 +31,8 @@ const navData = [
 ]
 
 const Header = () => {
+   
+
     const [mobile, setMobile] = useState(false)
 
     const openMenu = () => {
@@ -38,6 +42,7 @@ const Header = () => {
     const closeMenu = () => {
         setMobile(false);
     };
+
     return (
         <header className={styles.header}>
             <div className="container">
@@ -52,7 +57,9 @@ const Header = () => {
                         }
                     </ul>
                     <div className={styles.icon_group}>
-                        <Link to={"/qeydiyyat"}><PurpleButton title="Qeydiyyat" /></Link>
+                       
+                            <Link to={"/qeydiyyat"}><PurpleButton title="Qeydiyyat" /></Link> 
+                    
                         <div className={styles.basket_icon}><FaShoppingBasket />
                             <span className={styles.basket_count}>0</span>
                         </div>
@@ -79,4 +86,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

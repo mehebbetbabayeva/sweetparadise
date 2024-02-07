@@ -9,6 +9,7 @@ import KataloqCategory from "../../components/KataloqCategory"
 
 
 const Home = () => {
+
     return (
         <PageContainer>
             <WelcomeBanner />
