@@ -4,7 +4,10 @@ import ServicesSteps from "../../components/ServicesSteps"
 import WelcomeBanner from "../../components/WelcomeBanner"
 import Videos from "../../components/Videos"
 import SocialMedia from "../../components/SocialMedia"
-import KataloqCategory from "../../components/KataloqCategory"
+
+import Kataloq from "../../components/Kataloq"
+
+
 
 
 
@@ -15,10 +18,9 @@ const Home = () => {
             <WelcomeBanner />
             <Services />
             <ServicesSteps />
-            <KataloqCategory />
+            <Kataloq/>
             <Videos />
             <SocialMedia />
-
         </PageContainer>
     )
 }
