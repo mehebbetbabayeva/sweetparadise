@@ -19,7 +19,7 @@ const Products = () => {
             <div className="container">
                 <div className={styles.center}>
                     <form className={styles.form_register}>
-                        <div className={styles.icon_input} >
+                        <div className={styles.input_group}>
                             <span> <FaSearch /> </span>
                             <input type="text" placeholder=" Axtar" value={search} onChange={(e) => {
                                 setsearch(e.target.value)
