@@ -33,6 +33,20 @@
 
 }
 
+.card {
+    background-color: white;
+    min-height: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .productContainer {
     display: flex;
     flex-wrap: wrap;

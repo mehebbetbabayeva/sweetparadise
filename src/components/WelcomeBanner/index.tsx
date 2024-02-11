@@ -13,7 +13,7 @@ const WelcomeBanner = () => {
                 <div className={styles.banner_text}>
                     <h2 className={styles.logo}>Sweet Paradise</h2>
                     <h1 className={styles.welcome_text}>Biz həyatınızı daha da şirin edəcəyik!</h1>
-                    <div className={styles.welcome_button}><Link to="">  <PurpleButton title="Desertləri gör" /></Link></div>
+                    <div className={styles.welcome_button}><Link to="/kataloq">  <PurpleButton title="Desertləri gör" /></Link></div>
                 </div>
 
                 <div className={styles.banner_carousel}>
@@ -21,10 +21,6 @@ const WelcomeBanner = () => {
                 </div>
                 <div className={styles.banner_img}>
                     <img src={Bannerimg} alt="banner" />
-
-
-
-
                 </div>
             </div>
         </div>

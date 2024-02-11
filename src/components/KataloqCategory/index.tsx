@@ -5,15 +5,16 @@ import macaron from "../../assets/images/makaron1.jpg";
 import cupcake from "../../assets/images/cupcake Visneli.png";
 import maffin from "../../assets/images/muffin1.jpg";
 import donut from "../../assets/images/donut1.jpg";
-import { productData } from "../../data";
+import { productData, productDataType } from "../../data";
 import CardItem from "../CardItem";
-
+import PurpleButton from "../PurpleButton"
 import { Link } from "react-router-dom";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./kataloq.css"
-
+import toast from "react-hot-toast";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../slices/cartSlice";
 interface carouselDataType {
     img: string,
     category: string,
@@ -58,7 +59,12 @@ const KataloqCategory = () => {
         };
     }, []);
 
+    const dispatch = useDispatch();
 
+    const onAddToCart = (product: productDataType) => {
+        dispatch(addToCart(product));
+        toast.success("Added to cart");
+    };
     return (
         <div className="container">
             <div className={styles.kataloq_container}>
@@ -79,18 +85,21 @@ const KataloqCategory = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                {/* </div> */}
+
 
                 <div className={styles.kataloq_products_container}>
                     {
                         filteredProducts.map((product) => {
-                            return <Link to={`/kataloq/${product.title}`}><CardItem
-                                key={product.id}
-                                image={product.image}
-                                title={product.title}
-                                description={product.description}
-                                price={product.price}
-                            /></Link>
+                            return <div className={styles.card} key={product.id}>
+                                <Link to={`/kataloq/${product.title}`}>
+                                    <CardItem
+                                        image={product.image}
+                                        title={product.title}
+                                        description={product.description}
+                                        price={product.price}
+                                    /></Link>
+                                <PurpleButton title="Səbətə əlavə et" onClick={() => onAddToCart(product)} />
+                            </div>
                         })
                     }
                 </div>

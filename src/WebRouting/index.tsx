@@ -7,6 +7,7 @@ import Contact from "../pages/Contact"
 import About from "../pages/About"
 import Products from "../pages/AllProducts"
 import ProductDetail from "../components/productDetail"
+import Basket from "../pages/Basket"
 
 
 
@@ -21,6 +22,8 @@ const WebRouting = () => {
             <Route path="/haqqımızda" element={<About />} />
             <Route path="/kataloq" element={<Products />} />
             <Route path="/kataloq/:title" element={<ProductDetail />} />
+            <Route path="/səbət" element={<Basket />} />
+            <Route path="/sifariş-et" element={<Basket />} />
 
         </Routes>
     )
