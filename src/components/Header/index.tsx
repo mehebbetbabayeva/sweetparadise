@@ -5,7 +5,8 @@ import PurpleButton from "../PurpleButton";
 import { FaBars } from "react-icons/fa";
 import { ImCancelCircle } from "react-icons/im";
 import { useState } from "react";
-
+import { RootState } from "../../store/store";
+import { useSelector } from "react-redux";
 
 const navData = [
     {
@@ -31,7 +32,15 @@ const navData = [
 ]
 
 const Header = () => {
-   
+    const cartItems = useSelector((state: RootState) => state.cartReducer.cart);
+    const getQuantity = () => {
+        let quantity = 0;
+        cartItems.forEach((item) => (quantity += item.quantity));
+        return quantity;
+    };
+
+    const cartCount = getQuantity();
+
 
     const [mobile, setMobile] = useState(false)
 
@@ -57,13 +66,17 @@ const Header = () => {
                         }
                     </ul>
                     <div className={styles.icon_group}>
-                       
-                            <Link to={"/qeydiyyat"}><PurpleButton title="Qeydiyyat" /></Link> 
-                    
-                        <div className={styles.basket_icon}><FaShoppingBasket />
-                            <span className={styles.basket_count}>0</span>
-                        </div>
 
+                        <Link to={"/qeydiyyat"} ><PurpleButton title="Qeydiyyat" /></Link>
+
+                        <Link to={"/səbət"}> <div className={styles.basket_icon}><FaShoppingBasket />
+                            <span className={styles.basket_count}>{cartCount > 0 && (
+                                <span className="ml-2 py-[2px] px-[8px] text-orange-500 text-sm font-bold rounded-full bg-white">
+                                    {cartCount}
+                                </span>
+                            )}</span>
+                        </div>
+                        </Link>
 
 
                         <div className={styles.menu_icon} onClick={openMenu}><FaBars /></div>

@@ -6,7 +6,7 @@
   list-style-type: none;
   text-decoration: none;
   outline: none;
-
+  user-select: none;
 }
 
 .container {
@@ -45,13 +45,8 @@ input::-webkit-inner-spin-button {
 
 
 @media screen and (min-width: 553px) and (max-width:768px) {
-    .container {
-        max-width: 90%;
-      
+  .container {
+    max-width: 90%;
+
   }
 }
-      
-      
-      
-
-
