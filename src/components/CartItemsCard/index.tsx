@@ -1,5 +1,4 @@
 import { Minus, Plus, Trash } from "lucide-react";
-import React from "react";
 import { useDispatch } from "react-redux";
 import {
     decreaseQuantity,
@@ -10,9 +9,15 @@ import styles from "./style.module.css"
 
 
 
+interface Product {
+    id: number;
+    title: string;
+    price: number;
+    quantity: number;
+    image: string;
+}
 
-
-const CartItemsCard = ({ product }: any) => {
+const CartItemsCard = ({ product }: { product: Product }) => {
 
 
     const dispatch = useDispatch();

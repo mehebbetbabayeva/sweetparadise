@@ -1,9 +1,14 @@
-import { productDataType } from "../../data"
+
 
 import styles from "./style.module.css"
 
-
-const CardItem = ({ image, title, description, price }: productDataType) => {
+interface CardItemProps {
+    image: string;
+    title: string;
+    description: string;
+    price: number;
+}
+const CardItem: React.FC<CardItemProps> = ({ image, title, description, price }) => {
 
     return (
         <div className={styles.cardItem}>

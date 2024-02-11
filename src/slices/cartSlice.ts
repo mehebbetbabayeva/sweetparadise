@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import {productData, productDataType} from "../data/index";
+import { productDataType} from "../data/index";
 
 export interface CartState {
   cart:productDataType[];

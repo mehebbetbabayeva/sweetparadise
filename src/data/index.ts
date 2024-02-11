@@ -34,6 +34,7 @@ export interface productDataType{
     category:string,
     image:string
     date?:string,
+    quantity?: number;
 }
 
 

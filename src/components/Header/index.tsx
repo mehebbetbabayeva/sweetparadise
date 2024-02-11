@@ -8,6 +8,7 @@ import { useState } from "react";
 import { RootState } from "../../store/store";
 import { useSelector } from "react-redux";
 
+
 const navData = [
     {
         to: "/",
@@ -35,7 +36,11 @@ const Header = () => {
     const cartItems = useSelector((state: RootState) => state.cartReducer.cart);
     const getQuantity = () => {
         let quantity = 0;
-        cartItems.forEach((item) => (quantity += item.quantity));
+        cartItems.forEach((item) => {
+            if (item.quantity !== undefined) {
+                quantity += item.quantity;
+            }
+        });
         return quantity;
     };
 

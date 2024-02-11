@@ -4,7 +4,7 @@ import styles from "./button.module.css"
 
 interface IButtonProps {
   title: string,
-  onClick: (event: React.MouseEvent<HTMLDivElement>) => void
+  onClick?: (event: React.MouseEvent<HTMLDivElement>) => void
 }
 const PurpleButton = ({ title, onClick }: IButtonProps) => {
 

@@ -15,8 +15,8 @@ const Products = () => {
     const filteredProducts = productData.filter((card) =>
         card.title.toLowerCase().includes(search.toLowerCase())
     );
-    const dispatch = useDispatch();
 
+    const dispatch = useDispatch();
     const onAddToCart = (product: productDataType) => {
         dispatch(addToCart(product));
         toast.success("Added to cart");
