@@ -1,14 +1,15 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import styles from "./style.module.css"
-import CartItemsCard from "../../components/CartItemsCard";
+import CartItemsCard, { Product } from "../../components/CartItemsCard";
 import PageContainer from "../../Pagecontainer";
 import Swal from "sweetalert2";
+import { productDataType } from "../../data";
 
-const getTotal = (cartItem: any) => {
+const getTotal = (cartItem: productDataType[]) => {
     let totalQuantity = 0;
     let totalPrice = 0;
-    cartItem.forEach((item: any) => {
+    cartItem.forEach((item) => {
         totalQuantity += item.quantity!;
         totalPrice += item.price! * item.quantity!;
     });
@@ -34,7 +35,7 @@ const Basket = () => {
             <div className="container">
                 <div className={styles.basket_card}>
                     {cartItem?.map((item) => (
-                        <CartItemsCard product={item} />
+                        <CartItemsCard product={item as Product} />
                     ))}
                 </div>
                 <div className={styles.checkout_details} >

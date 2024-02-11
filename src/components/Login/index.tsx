@@ -33,16 +33,10 @@ const Login = () => {
 
     const onLogin = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        try {
-            const userCredential = await signInWithEmailAndPassword(auth, formData.email, formData.password);
-            const user = userCredential.user;
-            navigate("/");
-            console.log(user);
-        } catch (error) {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.error(errorCode, errorMessage);
-        }
+        const userCredential = await signInWithEmailAndPassword(auth, formData.email, formData.password);
+        const user = userCredential.user;
+        navigate("/");
+        console.log(user);
         setFormData({ email: "", password: "" })
     };
 
@@ -50,7 +44,7 @@ const Login = () => {
         <div className="container">
             <div className={styles.center_box}>
                 <div className={styles.box_container}>
-                    <form className={styles.form_register}>
+                    <form className={styles.form_register} onSubmit={onLogin}>
                         <h1 className={styles.head}>Giriş</h1>
                         <div className={styles.icon_input}>
                             <span> <MdOutlineMail /> </span>
@@ -77,8 +71,9 @@ const Login = () => {
 
                         </div>
                         <button
+
                             className={styles.purplebtn}
-                            onClick={onLogin}
+
                             disabled={disable}
                         >
                             Giriş

@@ -6,9 +6,10 @@ import { productData, productDataType } from "../../data";
 import CardItem from "../../components/CardItem";
 import { Link } from "react-router-dom"
 import PurpleButton from "../../components/PurpleButton";
-import toast from "react-hot-toast";
+
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slices/cartSlice";
+import Swal from "sweetalert2";
 
 const Products = () => {
     const [search, setsearch] = useState("")
@@ -19,7 +20,13 @@ const Products = () => {
     const dispatch = useDispatch();
     const onAddToCart = (product: productDataType) => {
         dispatch(addToCart(product));
-        toast.success("Added to cart");
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Məhsul əlavə edildi",
+            showConfirmButton: false,
+            timer: 1500
+        });
     };
 
     return (

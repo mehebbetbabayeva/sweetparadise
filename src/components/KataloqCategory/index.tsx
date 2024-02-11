@@ -12,9 +12,10 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./kataloq.css"
-import toast from "react-hot-toast";
+
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../slices/cartSlice";
+import Swal from "sweetalert2";
 interface carouselDataType {
     img: string,
     category: string,
@@ -30,11 +31,8 @@ const carouselData: carouselDataType[] = [
 
 const KataloqCategory = () => {
     const [selectedCategory, setSelectedCategory] = useState("cupcake");
-
     const handleItemClick = (mycategory: string) => {
         setSelectedCategory(mycategory);
-
-
     };
     const filteredProducts = productData.filter((product) => {
         return product.category === selectedCategory
@@ -50,7 +48,6 @@ const KataloqCategory = () => {
             setSlidesPerView(5);
         }
     };
-
     useEffect(() => {
         updateSlidesPerView();
         window.addEventListener("resize", updateSlidesPerView);
@@ -63,7 +60,13 @@ const KataloqCategory = () => {
 
     const onAddToCart = (product: productDataType) => {
         dispatch(addToCart(product));
-        toast.success("Added to cart");
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Məhsul əlavə edildi",
+            showConfirmButton: false,
+            timer: 1500
+        });
     };
     return (
         <div className="container">

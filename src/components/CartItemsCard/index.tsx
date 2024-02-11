@@ -9,7 +9,7 @@ import styles from "./style.module.css"
 
 
 
-interface Product {
+export interface Product {
     id: number;
     title: string;
     price: number;

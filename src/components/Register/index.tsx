@@ -49,17 +49,13 @@ const Register = () => {
             return;
         }
 
-        try {
-            const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
-            const user = userCredential.user;
-            console.log(user);
-            navigate("/giriş");
-            localStorage.setItem('userFullName', formData.fullName);
-        } catch (error) {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.error(errorCode, errorMessage);
-        }
+
+        const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/giriş");
+        localStorage.setItem('userFullName', formData.fullName);
+
 
         setFormData({ fullName: "", email: "", password: "", confirmPassword: "" })
         setPasswordError(false);
